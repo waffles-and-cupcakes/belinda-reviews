@@ -1,5 +1,5 @@
 {
-  "name": "FEC Reviews",
+  "name": "fec-reviews",
   "version": "1.0.0",
   "description": "",
   "author": "Belinda Mo",
@@ -8,10 +8,37 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "ser": "nodemon server/server.js",
+    "cli": "webpack -d --watch",
+    "start": "npm run ser | npm run cli",
+    "dev-server": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "pg-promise": "^8.2.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "nodemon": "^1.17.3",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
   }
 }
