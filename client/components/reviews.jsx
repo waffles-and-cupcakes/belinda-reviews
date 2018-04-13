@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button, Card, Row, Col, Icon, Pagination } from 'react-materialize';
 
 
 class Reviews extends React.Component {
 
   render() {
     return (
+      <div>
       <section className="review-container"> 
-
+        
         <div className="detail-container">
           <img className="user-photo" src="./pfp.jpg" />
           <div className="x-detail-container">
@@ -23,6 +25,9 @@ class Reviews extends React.Component {
         </div>
 
       </section> 
+      <Pagination items={10} activePage={1} maxButtons={8} />
+      </div>
+
     )
     
   }

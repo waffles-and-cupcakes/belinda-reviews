@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button, Card, Row, Col, Icon } from 'react-materialize';
 
 
 class Ratings extends React.Component {
@@ -13,6 +14,7 @@ class Ratings extends React.Component {
           <span className="title">311 Reviews</span>
           {stars}
         </div>
+        <Icon>search</Icon>
         <input className="search" placeholder="Search reviews" />
       </div>
       {/* <div className="break"></div> */}
