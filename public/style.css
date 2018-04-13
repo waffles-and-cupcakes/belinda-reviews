@@ -1,0 +1,99 @@
+/* Ratings */
+/* ------------------ */
+
+body {
+  background-color: #FFFFFF;
+}
+p, div, input {
+  font-size: 17px; 
+  color: #484848;
+}
+
+.break {
+  height: 3px;
+  width: 300px;
+  display: block;
+  background-color:black;
+}
+
+p {
+  margin: 0;
+}
+/* ------------------ */
+
+.ratings-container {
+  background-color: rgba(189, 255, 173, 0.8);
+  height:100%;
+  width:100%;
+}
+
+.ratings-container > div {
+  padding: 20px 0;
+
+}
+
+.ratings-container > div > div {
+  background-color: rgba(255, 199, 199, 0.8);
+  padding: 20px 0;
+}
+
+.stars {
+  height: 1em;
+  width: auto;
+}
+
+/* ------------------ */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/* ------------------ */
+
+
+.avgs-container {
+  display:grid;
+  grid-template: repeat(4, 25%) / repeat(2, 50%);
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  /* grid-row: 2 / span 3;
+  grid-column: 1 / span 2; */
+}
+
+
+.avgs-container .stars {
+  float: right;
+}
+
+/* Reviews */
+/* ------------------ */
+
+.review-container {
+  background-color: rgba(168, 227, 255, 0.8);
+  height:100%;
+  width:100%;
+}
+
+.user-photo {
+  height:3em;
+  width:auto;
+  border-radius: 50%;
+}
+
+.detail-container {
+  display:flex;
+  flex-direction: row;
+}
+
+.x-detail-container {
+  display:flex;
+  flex-direction: column;
+}
