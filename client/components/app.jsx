@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import Ratings from './ratings';
-import Reviews from './reviews';
+import RatingsHeader from './ratingsHeader';
+import ReviewsList from './reviewsList';
 
 class App extends React.Component {
   constructor(props) {
@@ -30,9 +30,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Ratings reviews={this.state.reviews} />
-        <br></br>
-        <Reviews reviews={this.state.reviews} />
+        <RatingsHeader reviews={this.state.reviews} />
+        <ReviewsList reviews={this.state.reviews} />
       </div>
     );
   }
