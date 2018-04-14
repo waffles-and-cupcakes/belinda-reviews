@@ -1,6 +1,8 @@
+
+
 module.exports = {
   entry: [
-    './client/index.js'
+    './client/index.jsx'
   ],
   module: {
     rules: [
@@ -8,7 +10,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      }
+      },
     ]
   },
   resolve: {
@@ -21,5 +23,5 @@ module.exports = {
   },
   devServer: {
     contentBase: './public'
-  }
+  },
 };
