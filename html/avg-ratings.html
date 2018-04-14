@@ -7,22 +7,57 @@
   
   <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
   <style>
-    i.icon-star {
-      color: #00888B;
-      /* border-radius:50%; */
-    }
-    /* .container {
-      background-color:grey;
-    } */
-    input.search{
-      border: 1px solid rgb(225, 226, 226);
-      border-radius: 2px;
-      /* padding: 0.5em; */
+    body {
+      font-size: 17px;
+      color: #484848;
     }
 
-    input.search:focus {
+    i.icon-star {
+      color: #00888B;
+      /* margin:0px; */
+      /* border-radius:50%; */
+    }
+    
+    .avgs i.icon-star {
+      font-size: 1.1em;      
+    }
+
+    /* div.rev-header {
+      display:flex;
+      align-items:center;
+
+    } */
+
+    div.rev-title {
+      display:flex;
+      justify-content: flex-start;
+      align-items:baseline;
+      /* align */
+    }
+
+
+    span.title-text {
+      font-size: 28px;
+      font-weight: bold;
+      padding-right: 0.5em;
+    }
+
+
+    input.rev-search{
+      border: 1px solid rgb(225, 226, 226);
+      border-radius: 3px;
+      height:2em;
+      padding-left: 0.5em;
+    }
+
+    input.rev-search:focus {
       border: 1px solid #00888B;
       border-radius: 2px;
+    }
+
+    .rating {
+      display:flex;
+      justify-content: space-between;
     }
 
   </style>
@@ -32,29 +67,84 @@
 
 <div class="container">
   <div class="row"> <div class="divider"></div></div>
-  <div class="row section">
-    <div class="col">
-      <span class="title">311 Reviews</span>
-      <i class="material-icons icon-star">star</i>
-      <i class="material-icons icon-star">star</i>
-      <i class="material-icons icon-star">star</i>
-      <i class="material-icons icon-star">star</i>
-      <i class="material-icons icon-star">star</i>
+  <div class="row">
+    <div class="col s12 m8 rev-title">
+      <span class="title-text">311 Reviews</span>
+      <div class="title-stars">
+        <i class="material-icons icon-star small">star</i>
+        <i class="material-icons icon-star small">star</i>
+        <i class="material-icons icon-star small">star</i>
+        <i class="material-icons icon-star small">star</i>
+        <i class="material-icons icon-star small">star</i>
+      </div>
     </div>
-    <div class="col s6">
-      <input class="search" placeholder="Search reviews"> </input>
+    <div class="col s12 m4">
+      <input class="rev-search" placeholder="Search reviews" />
     </div>
   </div>
   <div class="row"> <div class="divider"></div></div>
-  <div class="row section">
-    <div class="col accuracy">Accuracy</div>
-    <div class="col location">Location</div>
-    <div class="col communication">Communication</div>
-    <div class="col check_in">Check In</div>
-    <div class="col cleanliness">Cleanliness</div>
-    <div class="col value">Value</div>
+  <div class="row avgs">
+    <div class="col s12 m6 rating">
+        <div class="accuracy ">Accuracy</div>
+        <div>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+        </div>
+      </div>
+      <div class="col s12 m6 rating">
+        <div class="location ">Location</div>
+        <div>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+        </div>
+      </div>
+    <div class="col s12 m6 rating">
+      <div class="communication ">Communication</div>
+      <div>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+      </div>
+    </div>    
+    <div class="col s12 m6 rating">
+        <div class="check-in">Check In</div>
+        <div>
+          <i class="material-icons icon-star">star</i>
+          <i class="material-icons icon-star">star</i>
+          <i class="material-icons icon-star">star</i>
+          <i class="material-icons icon-star">star</i>
+          <i class="material-icons icon-star">star</i>
+        </div>
+      </div>   
+      <div class="col s12 m6 rating">
+          <div class="cleanliness">Cleanliness</div>
+          <div>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+            <i class="material-icons icon-star">star</i>
+          </div>
+        </div>   
+            <div class="col s12 m6 rating">
+      <div class="value">Value</div>
+      <div>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+        <i class="material-icons icon-star">star</i>
+      </div>
+    </div>         
   </div>
-  <div class="row"> <div class="divider"></div></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 

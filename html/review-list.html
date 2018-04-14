@@ -7,15 +7,19 @@
   
   <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
   <style>
+    /* .container {
+      border-style: none;
+    } */
+    .collection {
+      border:0; 
+      /* background-color: black; */
+    }
     .collection-item {
       margin: 2em;
     }
 
-    /* .comment {
-      float:left;
-    } */
     i.icon-flag {
-      color: #757575;
+      color: rgb(122, 122, 122);
       transform: rotate(-20deg);
     }
 
@@ -48,12 +52,13 @@
       color: rgb(122, 122, 122);
     }
 
-
-
   </style>
 </head>
 <body>
-  <ul class="collection">
+  <br><br>
+
+  <div class="container reviews">
+  <ul class="row collection">
     <li class="i collection-item avatar">
       <img src="./pfp.jpg" alt="" class="circle">
       <span class="title">Shiyao</span>
@@ -90,7 +95,9 @@
       <a href="#!" class="secondary-content"><i class="material-icons  icon-flag">flag</i></a>
     </li>
   </ul>
-  <ul class="pagination">
+  <div class="row divider"></div>
+
+  <ul class="row pagination">
     <li class="disabled pg-arrow"><a href="#!"><i class="material-icons icon-arrow-left">arrow_drop_down</i></a></li>
     <li class="pg-active pg-num"><a href="#!">1</a></li>
     <li class="pg-num"><a href="#!">2</a></li>
@@ -99,7 +106,7 @@
     <li class="pg-num"><a href="#!">10</a></li>
     <li class="pg-arrow"><a href="#!"><i class="material-icons icon-arrow-right">arrow_drop_down</i></a></li>
   </ul>
-
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 </body>
