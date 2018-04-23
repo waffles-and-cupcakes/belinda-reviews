@@ -7,7 +7,6 @@ class Pagination extends React.Component {
   constructor(props) {
     super(props); //changePage, activePage, numPages
 
-    
     this.state = {
       numbers: this.setLayout(parseInt(this.props.activePage))
     };

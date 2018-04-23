@@ -1,9 +1,5 @@
-/* .container {
-      border-style: none;
-    } */
     .collection {
       border:0; 
-      /* background-color: black; */
     }
     .collection-item {
       margin: 2em;

@@ -5,25 +5,16 @@ body {
 
 i.icon-star {
   color: #00888B;
-  /* margin:0px; */
-  /* border-radius:50%; */
 }
 
 .avgs i.icon-star {
   font-size: 1.1em;      
 }
 
-/* div.rev-header {
-  display:flex;
-  align-items:center;
-
-} */
-
 div.rev-title {
   display:flex;
   justify-content: flex-start;
   align-items:baseline;
-  /* align */
 }
 
 
