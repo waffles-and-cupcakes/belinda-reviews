@@ -16,7 +16,7 @@ class Pagination extends React.Component {
   setLayout(active) {
     var nPages = parseInt(this.props.numPages);
     // var active = parseInt(this.props.activePage);
-    console.log('nPages: ', nPages, ', active: ', active);
+    // console.log('nPages: ', nPages, ', active: ', active);
     var numbers = [];
     if (nPages > 5) {
       if (active !== 1) numbers.push('<');
@@ -41,7 +41,7 @@ class Pagination extends React.Component {
         numbers.push(i.toString());
       }
     }
-    console.log(numbers);
+    // console.log(numbers);
     return numbers;
   }
 

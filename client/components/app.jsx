@@ -13,7 +13,8 @@ class App extends React.Component {
 
     this.state = {
       reviews: mockData,
-      filtered: mockData
+      filtered: mockData,
+      activePage: '1'
     }
   }
 
@@ -30,18 +31,25 @@ class App extends React.Component {
     // });
   }
 
+  changePage(newPage) {
+    this.setState({activePage: newPage});
+  }
+
   filterReviews(term) {
     term = term.toLowerCase();
     console.log('reach app.jsx: ', term);
     var filtered = this.state.reviews.filter(review => review.body.toLowerCase().includes(term));
-    this.setState({filtered: filtered});
+    this.setState({
+      filtered: filtered,
+      activePage: '1'
+    });
   }
 
   render() {
     return (
       <div>
         <RatingsHeader reviews={this.state.reviews} filterReviews={this.filterReviews.bind(this)} />
-        <ReviewsList reviews={this.state.filtered} />
+        <ReviewsList changePage={this.changePage.bind(this)} activePage={this.state.activePage} reviews={this.state.filtered} />
       </div>
     );
   }

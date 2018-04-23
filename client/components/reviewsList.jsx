@@ -9,9 +9,6 @@ class ReviewsList extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      activePage: '1'
-    }
   }
 
   changePage(newPage) {
@@ -19,15 +16,17 @@ class ReviewsList extends React.Component {
   }
 
   renderReviews() {
+    if ((Math.ceil(this.props.reviews.length / 7)) === 0) return;
     var result = [];
-    var start = ((parseInt(this.state.activePage - 1)) * 7);
-    // console.log('ACTIVE PAGE: ', this.state.activePage, 'NUM PAGES: ',  Math.ceil(this.props.reviews.length / 7));
+    var start = ((parseInt(this.props.activePage - 1)) * 7);
+    // console.log('ACTIVE PAGE: ', this.props.activePage, 'NUM PAGES: ',  (Math.ceil(this.props.reviews.length / 7)).toString());
     var end;
-    if (this.state.activePage === (Math.ceil(this.props.reviews.length / 7)).toString()) {
+    if (this.props.activePage === (Math.ceil(this.props.reviews.length / 7)).toString()) {
       end = this.props.reviews.length;
     } else {
-      end = parseInt(this.state.activePage) * 7;
+      end = parseInt(this.props.activePage) * 7;
     }
+    // console.log(start, end)
     for (var i = start; i < end; i++) {
       result.push(<Review key={i} review={this.props.reviews[i]}/>);
     }
@@ -42,7 +41,7 @@ class ReviewsList extends React.Component {
       </ul>
       <div className="row divider"></div>
 
-      <Pagination changePage={this.changePage.bind(this)} activePage={this.state.activePage} numPages={Math.ceil(this.props.reviews.length / 7)}/>
+      <Pagination changePage={this.props.changePage} activePage={this.props.activePage} numPages={Math.ceil(this.props.reviews.length / 7)}/>
       </div>
     )
     
