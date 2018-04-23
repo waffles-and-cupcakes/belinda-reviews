@@ -14,12 +14,21 @@
       transform: rotate(-20deg);
     }
 
+    li {
+      margin: 0.1em;
+    }
+    
+    .read-more:hover {
+      cursor:pointer;
+      text-decoration: underline;
+    }
+
     .pagination > .pg-num, .pagination > .pg-arrow  {
       border: 1.25px solid rgb(225, 226, 226);
       border-radius: 8%;
     }
 
-    .pagination > .pg-num > a,  .pagination > .pg-arrow > a {
+    .read-more, .pagination > .pg-num > a,  .pagination > .pg-arrow > a {
       color: #00888B;
     }
 

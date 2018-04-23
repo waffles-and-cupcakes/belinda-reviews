@@ -5,12 +5,15 @@ import axios from 'axios';
 import RatingsHeader from './ratingsHeader';
 import ReviewsList from './reviewsList';
 
+import mockData from './../mockData';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      reviews: []
+      reviews: mockData,
+      filtered: mockData
     }
   }
 
@@ -24,14 +27,21 @@ class App extends React.Component {
     // })
     // .catch((err) => {
     //   console.log('error GET-ing /rooms/1/reviews')
-    // })
+    // });
+  }
+
+  filterReviews(term) {
+    term = term.toLowerCase();
+    console.log('reach app.jsx: ', term);
+    var filtered = this.state.reviews.filter(review => review.body.toLowerCase().includes(term));
+    this.setState({filtered: filtered});
   }
 
   render() {
     return (
       <div>
-        <RatingsHeader reviews={this.state.reviews} />
-        <ReviewsList reviews={this.state.reviews} />
+        <RatingsHeader reviews={this.state.reviews} filterReviews={this.filterReviews.bind(this)} />
+        <ReviewsList reviews={this.state.filtered} />
       </div>
     );
   }

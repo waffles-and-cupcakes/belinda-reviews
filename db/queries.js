@@ -12,11 +12,7 @@ var getRoomReviews = function(req, res, next) {
   db.any('SELECT * FROM reviews WHERE room_id = $1', req.params.id)
   .then((data) => {
     res.status(200)
-    .json({
-      status: 'success',
-      data: data,
-      message: 'Retrieved reviews for room ' + req.params.id
-    });
+    .json(data);
   })
   .catch((err) => {
     return next(err);

@@ -1,92 +1,96 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, Card, Row, Col, Icon } from 'react-materialize';
+import s from './../css/ratingsHeader.css';
 
+import Search from './search.jsx';
 
 class RatingsHeader extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    
+    this.state = this.averageRatings();
+  }
+  
+  //for criteria plus average
+  averageRatings() {
+    console.log(this.props.reviews);
+    var result = {
+      'Accuracy': 0,
+      'Location': 0,
+      'Communication': 0,
+      'Check In': 0,
+      'Cleanliness': 0,
+      'Value': 0,
+      'Overall': 0
+    };
+
+    this.props.reviews.forEach((r) => {
+      result['Accuracy'] += r.accuracy;
+      result['Location'] += r.location;
+      result['Communication'] += r.communication;
+      result['Check In'] += r.check_in;
+      result['Cleanliness'] += r.cleanliness;
+      result['Value'] += r.value;
+      result['Overall'] += (r.accuracy + r.location + r.communication + r.check_in + r.cleanliness + r.value) / 6;
+    })
+
+    for (var criteria in result) {
+      var avg = result[criteria] / this.props.reviews.length;
+      avg = Math.round(avg*2)/2;
+      result[criteria] = avg;
+    }
+    return result;
+  }
+
+  //array of star, star_border, star_half
+  stars(criteria) {
+    var rating = this.state[criteria];
+    var arr = [];
+    for (var i = 1; i <= 5; i++) {
+      if (rating >= i) {
+        arr.push(<i key={`${criteria}-star-${i}`} className={`material-icons small ${s['icon-star']}`}>star</i>);
+      } else { //less than i
+        if (Math.ceil(rating) === i) {
+          arr.push(<i key={`${criteria}-star-${i}`} className={`material-icons small ${s['icon-star']}`}>star_half</i>);
+        } else {
+          arr.push(<i key={`${criteria}-star-${i}`} className={`material-icons small ${s['icon-star']}`}>star_border</i>);
+        }
+      }
+    }
+    return arr;
+  }
 
   render() {
+    const criteria = ['Accuracy', 'Location', 'Communication', 'Check In', 'Cleanliness', 'Value'];
+    var star = <i className={`material-icons small ${s['icon-star']}`}>star</i>;
     return (
-      <div class="container">
-      <div class="row"> <div class="divider"></div></div>
-      <div class="row">
-        <div class="col s12 m8 rev-title">
-          <span class="title-text">311 Reviews</span>
-          <div class="title-stars">
-            <i class="material-icons icon-star small">star</i>
-            <i class="material-icons icon-star small">star</i>
-            <i class="material-icons icon-star small">star</i>
-            <i class="material-icons icon-star small">star</i>
-            <i class="material-icons icon-star small">star</i>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <input class="rev-search" placeholder="Search reviews"></input>
-        </div>
-      </div>
-      <div class="row"> <div class="divider"></div></div>
-      <div class="row avgs">
-        <div class="col s12 m6 rating">
-            <div class="accuracy ">Accuracy</div>
-            <div>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-            </div>
-          </div>
-          <div class="col s12 m6 rating">
-            <div class="location ">Location</div>
-            <div>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-            </div>
-          </div>
-        <div class="col s12 m6 rating">
-          <div class="communication ">Communication</div>
+    <div className="container">
+
+      <div className="row"> <div className="divider"></div></div>
+      <div className="row">
+        <div className={`col s12 m8 ${s['rev-title']}`}>
+          <span className={s['title-text']}>{this.props.reviews.length} Reviews</span>
           <div>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
+            {this.stars('Overall')}
           </div>
-        </div>    
-        <div class="col s12 m6 rating">
-            <div class="check-in">Check In</div>
-            <div>
-              <i class="material-icons icon-star">star</i>
-              <i class="material-icons icon-star">star</i>
-              <i class="material-icons icon-star">star</i>
-              <i class="material-icons icon-star">star</i>
-              <i class="material-icons icon-star">star</i>
-            </div>
-          </div>   
-          <div class="col s12 m6 rating">
-              <div class="cleanliness">Cleanliness</div>
+        </div>
+        <Search reviews={this.props.reviews} filterReviews={this.props.filterReviews}/>
+      </div>
+
+      <div className="row"> <div className="divider"></div></div>
+      <div className={`row ${s.avgs}`}>
+        {criteria.map((criteria, i) => (
+          <div key={i} className={`col s12 m6 ${s.rating}`}>
+              <div>{criteria}</div>
               <div>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
-                <i class="material-icons icon-star">star</i>
+                {this.stars(criteria)}
               </div>
-            </div>   
-                <div class="col s12 m6 rating">
-          <div class="value">Value</div>
-          <div>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-            <i class="material-icons icon-star">star</i>
-          </div>
-        </div>         
+            </div>
+        ))}
       </div>
+
     </div>
     )
   }
