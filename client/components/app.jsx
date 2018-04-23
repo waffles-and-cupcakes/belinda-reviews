@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import Ratings from './ratings';
-import Reviews from './reviews';
+import RatingsHeader from './ratingsHeader';
+import ReviewsList from './reviewsList';
+
+import mockData from './../mockData';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      reviews: []
+      reviews: mockData,
+      filtered: mockData,
+      activePage: '1'
     }
   }
 
@@ -24,15 +28,28 @@ class App extends React.Component {
     // })
     // .catch((err) => {
     //   console.log('error GET-ing /rooms/1/reviews')
-    // })
+    // });
+  }
+
+  changePage(newPage) {
+    this.setState({activePage: newPage});
+  }
+
+  filterReviews(term) {
+    term = term.toLowerCase();
+    console.log('reach app.jsx: ', term);
+    var filtered = this.state.reviews.filter(review => review.body.toLowerCase().includes(term));
+    this.setState({
+      filtered: filtered,
+      activePage: '1'
+    });
   }
 
   render() {
     return (
       <div>
-        <Ratings reviews={this.state.reviews} />
-        <br></br>
-        <Reviews reviews={this.state.reviews} />
+        <RatingsHeader reviews={this.state.reviews} filterReviews={this.filterReviews.bind(this)} />
+        <ReviewsList changePage={this.changePage.bind(this)} activePage={this.state.activePage} reviews={this.state.filtered} />
       </div>
     );
   }
