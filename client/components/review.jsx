@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import moment from 'moment';
-import { Button, Card, Row, Col, Icon } from 'react-materialize';
 import s from './../css/reviewsList.css';
 
 
