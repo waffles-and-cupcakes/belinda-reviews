@@ -1,5 +1,3 @@
-
-
 module.exports = {
   entry: [
     './client/index.jsx'
@@ -52,5 +50,5 @@ module.exports = {
   },
   devServer: {
     contentBase: './public'
-  },
+  }
 };

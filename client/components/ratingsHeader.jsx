@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button, Card, Row, Col, Icon } from 'react-materialize';
 import s from './../css/ratingsHeader.css';
 
 import Search from './search.jsx';
