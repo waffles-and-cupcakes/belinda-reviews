@@ -13,6 +13,6 @@ app.get('/rooms/:id/reviews', db.getRoomReviews);
 
 // app.use('/room/:id', express.static(path.join(__dirname, '/../public')));
 
-app.use(express.static(path.join(__dirname, '/../public')));
+app.use('/rooms/:id', express.static(path.join(__dirname, '/../public')));
 
 app.listen(3004, () => console.log('App listening on port 3004...'));

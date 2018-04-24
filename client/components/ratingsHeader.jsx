@@ -9,9 +9,18 @@ class RatingsHeader extends React.Component {
   constructor(props) {
     super(props);
     
-    this.state = this.averageRatings();
+    this.state = {};
   }
   
+  // componentDidMount() {
+  //   this.setState(this.averageRatings());
+  // }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.reviews !== this.props.reviews) {
+      this.setState(this.averageRatings());
+    }
+  }
   //for criteria plus average
   averageRatings() {
     // console.log(this.props.reviews);
@@ -62,6 +71,8 @@ class RatingsHeader extends React.Component {
   }
 
   render() {
+    // console.log
+    // this.setState(this.averageRatings());
     const criteria = ['Accuracy', 'Location', 'Communication', 'Check In', 'Cleanliness', 'Value'];
     var star = <i className={`material-icons small ${s['icon-star']}`}>star</i>;
     return (

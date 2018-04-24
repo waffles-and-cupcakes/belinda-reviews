@@ -6,17 +6,27 @@ import s from './../css/reviewsList.css';
 class Pagination extends React.Component {
   constructor(props) {
     super(props); //changePage, activePage, numPages
+    // console.log('num pages in constructor' + this.props.numPages);
 
     this.state = {
       numbers: this.setLayout(parseInt(this.props.activePage))
     };
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps !== this.props) {
+      this.setState({
+        numbers: this.setLayout(parseInt(this.props.activePage))
+      });
+    }
+  }
   
   setLayout(active) {
     var nPages = parseInt(this.props.numPages);
-    // var active = parseInt(this.props.activePage);
     // console.log('nPages: ', nPages, ', active: ', active);
+    // var active = parseInt(this.props.activePage);
     var numbers = [];
+    // console.log('nPages' + nPages);
     if (nPages > 5) {
       if (active !== 1) numbers.push('<');
       numbers.push('1');

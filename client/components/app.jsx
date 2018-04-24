@@ -19,16 +19,18 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // axios.get('/rooms/1/reviews')
-    // .then((res) => {
-    //   console.log('RESPONSE: ', res);
-    //   this.setState({
-    //     reviews: res.data
-    //   });
-    // })
-    // .catch((err) => {
-    //   console.log('error GET-ing /rooms/1/reviews')
-    // });
+    var roomNum = window.location.pathname.split('/')[2];
+    axios.get(`/rooms/${roomNum}/reviews`)
+    .then((res) => {
+      // console.log('RESPONSE: ', res);
+      this.setState({
+        reviews: res.data,
+        filtered: res.data
+      });
+    })
+    .catch((err) => {
+      console.log(`error GET-ing /rooms/${roomNum}/reviews`);
+    });
   }
 
   changePage(newPage) {
