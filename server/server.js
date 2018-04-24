@@ -2,9 +2,11 @@ const express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
+const cors = require('cors');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 
 var db = require('./../db/queries.js');
 
