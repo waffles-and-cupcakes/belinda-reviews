@@ -14,7 +14,7 @@ class RatingsHeader extends React.Component {
   
   //for criteria plus average
   averageRatings() {
-    console.log(this.props.reviews);
+    // console.log(this.props.reviews);
     var result = {
       'Accuracy': 0,
       'Location': 0,

@@ -37,7 +37,7 @@ class App extends React.Component {
 
   filterReviews(term) {
     term = term.toLowerCase();
-    console.log('reach app.jsx: ', term);
+    // console.log('reach app.jsx: ', term);
     var filtered = this.state.reviews.filter(review => review.body.toLowerCase().includes(term));
     this.setState({
       filtered: filtered,

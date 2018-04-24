@@ -8,9 +8,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "ser": "nodemon server/server.js",
+    "start": "nodemon server/server.js",
     "cli": "webpack -d --watch",
-    "start": "npm run ser | npm run cli",
     "dev-server": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "babel": {
