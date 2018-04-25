@@ -8,7 +8,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "dev:start": "nodemon server/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -26,7 +27,9 @@
       "^.+\\.(css|scss)$": "identity-obj-proxy"
     },
     "collectCoverage": true,
-    "collectCoverageFrom": ["client/components/*.{js,jsx}"]
+    "collectCoverageFrom": [
+      "client/components/*.{js,jsx}"
+    ]
   },
   "babel": {
     "presets": [
@@ -60,6 +63,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "expect": "^22.4.3",
     "html-webpack-plugin": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.3",

@@ -22,14 +22,14 @@ test('App retrieves data on server during componentDidMount', () => {
     const mounted = mount(<App />);
     const inst = mounted.instance();
     mounted.update();
-    console.log(mounted);
+    // console.log(mounted);
 
     return Promise
       .resolve(mounted)
       .then(() => mounted.update())
       .then(() => mounted.update())
       .then(() => {
-        console.log(mounted);
+        // console.log(mounted);
         expect(mounted.text()).not.toContain("Error");
       });
     // expect(inst).to.be.instanceOf(App);
