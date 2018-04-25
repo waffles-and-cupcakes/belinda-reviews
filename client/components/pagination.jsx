@@ -55,8 +55,8 @@ class Pagination extends React.Component {
   }
 
   handlePageClick(event) {
-    this.setState({numbers: this.setLayout(parseInt(event.currentTarget.textContent))});
-    this.props.changePage(event.currentTarget.textContent);
+    this.setState({numbers: this.setLayout(parseInt(event.target.textContent))});
+    this.props.changePage(event.target.textContent);
   }
 
   handleArrowClick(direction, event) {

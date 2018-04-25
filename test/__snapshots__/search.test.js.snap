@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders 1`] = `
+<div
+  className="input-field col s12 m4"
+>
+  <input
+    className="rev-search"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    placeholder="Search reviews"
+    value=""
+  />
+</div>
+`;

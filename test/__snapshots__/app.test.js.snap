@@ -1,0 +1,600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+       
+      <div
+        className="divider"
+      />
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col s12 m8 rev-title"
+      >
+        <span
+          className="title-text"
+        >
+          26
+           Reviews
+        </span>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="input-field col s12 m4"
+      >
+        <input
+          className="rev-search"
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="Search reviews"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+       
+      <div
+        className="divider"
+      />
+    </div>
+    <div
+      className="row avgs"
+    >
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Accuracy
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Location
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Communication
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Check In
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Cleanliness
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+      <div
+        className="col s12 m6 rating"
+      >
+        <div>
+          Value
+        </div>
+        <div>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+          <i
+            className="material-icons small icon-star"
+          >
+            star_border
+          </i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <ul
+      className="row collection collection"
+    >
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/rerumnequeexplicabo.png?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Rolland
+          </b>
+        </span>
+        <p>
+          September 2016
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/utnonculpa.jpg?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Brigham
+          </b>
+        </span>
+        <p>
+          April 2017
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/impeditducimusquia.jpg?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Olva
+          </b>
+        </span>
+        <p>
+          August 2016
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Morbi quis tortor id nulla ultrices aliquet.
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/aspernaturreiciendisdignissimos.png?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Joell
+          </b>
+        </span>
+        <p>
+          April 2016
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/excepturivoluptatibusesse.bmp?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Jule
+          </b>
+        </span>
+        <p>
+          November 2017
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipi
+            ...
+          </span>
+          <span
+            className="read-more"
+            onClick={[Function]}
+          >
+            Read more
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/reiciendistemporeprovident.bmp?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Udall
+          </b>
+        </span>
+        <p>
+          May 2016
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus se
+            ...
+          </span>
+          <span
+            className="read-more"
+            onClick={[Function]}
+          >
+            Read more
+          </span>
+        </div>
+      </li>
+      <li
+        className="collection-item avatar collection-item"
+      >
+        <img
+          className="circle"
+          src="https://robohash.org/etcupiditatedolores.bmp?size=50x50&set=set1"
+        />
+        <span
+          className="title"
+        >
+          <b>
+            Dreddy
+          </b>
+        </span>
+        <p>
+          July 2017
+        </p>
+        <a
+          className="secondary-content"
+          href="#!"
+        >
+          <i
+            className="material-icons icon-flag"
+          >
+            flag
+          </i>
+        </a>
+        <div>
+          <span
+            className="comment"
+          >
+            Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="row divider"
+    />
+    <ul
+      className="row pagination pagination"
+    >
+      <li
+        className="pg-active pg-num"
+        onClick={[Function]}
+      >
+        <a
+          href="#!"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="pg-num"
+        onClick={[Function]}
+      >
+        <a
+          href="#!"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="pg-num"
+        onClick={[Function]}
+      >
+        <a
+          href="#!"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="pg-num"
+        onClick={[Function]}
+      >
+        <a
+          href="#!"
+        >
+          4
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

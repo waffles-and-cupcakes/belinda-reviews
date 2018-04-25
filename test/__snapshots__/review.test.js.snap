@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reviews renders 1`] = `
+<li
+  className="collection-item avatar collection-item"
+>
+  <img
+    className="circle"
+    src="https://robohash.org/rerumnequeexplicabo.png?size=50x50&set=set1"
+  />
+  <span
+    className="title"
+  >
+    <b>
+      Rolland
+    </b>
+  </span>
+  <p>
+    September 2016
+  </p>
+  <a
+    className="secondary-content"
+    href="#!"
+  >
+    <i
+      className="material-icons icon-flag"
+    >
+      flag
+    </i>
+  </a>
+  <div>
+    <span
+      className="comment"
+    >
+      Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+    </span>
+  </div>
+</li>
+`;

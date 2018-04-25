@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination changes page on handlePageClick 1`] = `
+<ul
+  className="row pagination pagination"
+>
+  <li
+    className="pg-active pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      1
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      2
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      3
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      4
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Pagination renders 1`] = `
+<ul
+  className="row pagination pagination"
+>
+  <li
+    className="pg-active pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      1
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      2
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      3
+    </a>
+  </li>
+  <li
+    className="pg-num"
+    onClick={[Function]}
+  >
+    <a
+      href="#!"
+    >
+      4
+    </a>
+  </li>
+</ul>
+`;

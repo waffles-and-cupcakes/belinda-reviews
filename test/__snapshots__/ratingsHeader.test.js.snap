@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingsHeader renders 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+     
+    <div
+      className="divider"
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col s12 m8 rev-title"
+    >
+      <span
+        className="title-text"
+      >
+        26
+         Reviews
+      </span>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="input-field col s12 m4"
+    >
+      <input
+        className="rev-search"
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        placeholder="Search reviews"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+     
+    <div
+      className="divider"
+    />
+  </div>
+  <div
+    className="row avgs"
+  >
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Accuracy
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Location
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Communication
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Check In
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Cleanliness
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+    <div
+      className="col s12 m6 rating"
+    >
+      <div>
+        Value
+      </div>
+      <div>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+        <i
+          className="material-icons small icon-star"
+        >
+          star_border
+        </i>
+      </div>
+    </div>
+  </div>
+</div>
+`;
