@@ -5,10 +5,11 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = 'postgres://localhost:5432/fec';
+var connectionString = 'postgres://postgres:postgres@database:5432/fec';
 var db = pgp(connectionString);
 
 var getRoomReviews = function(req, res, next) {
+  console.log('BELINDA')
   db.any('SELECT * FROM reviews WHERE room_id = $1', req.params.id)
   .then((data) => {
     res.status(200)

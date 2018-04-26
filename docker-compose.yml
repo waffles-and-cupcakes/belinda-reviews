@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  reviews:
+    build: ./
+    depends_on:
+      - 'database'
+    ports: 
+      - '3004:3004'
+    # volumes:
+    #   - "./server/server.js:/usr/src/app/server/server.js"
+    #   - "./server/queries.js:/usr/src/app/server/queries.js"
+    # environment:
+    #   - DB_HOST=postgres
+    #   - DB_USER=postgres
+    #   - DB_NAME=fec
+
+  database:
+    # build: ./db/
+    image: postgres:10.3
+    # environment:
+    #  - POSTGRES_DB=fec

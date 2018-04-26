@@ -9,12 +9,8 @@ class RatingsHeader extends React.Component {
   constructor(props) {
     super(props);
     
-    this.state = {};
+    this.state = this.averageRatings();
   }
-  
-  // componentDidMount() {
-  //   this.setState(this.averageRatings());
-  // }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.reviews !== this.props.reviews) {
