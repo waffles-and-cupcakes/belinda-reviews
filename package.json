@@ -13,6 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "build": "webpack -d",
     "cli": "webpack -d --watch",
     "dev-server": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
