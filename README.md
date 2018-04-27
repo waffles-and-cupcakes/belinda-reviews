@@ -3,7 +3,7 @@
 > AirBnC is a lovely room listing app for travellers to find places to stay!
 > Check out our customers' room listing reviews by cloning this repo :)
 
-![](https://i.imgur.com/Z7h3K1E.png)
+![](https://i.imgur.com/hof72nu.png)
 
 This project was build using ReactJS, MaterializeCSS, Webpack, NodeJS, ExpressJS, and Postgres. It was deployed using Docker and EC2.
 
