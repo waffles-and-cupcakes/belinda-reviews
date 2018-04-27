@@ -8,7 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "dev:start": "nodemon server/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -19,7 +19,7 @@
   },
   "jest": {
     "setupFiles": [
-      "./test/jestsetup.js"
+      "./client/components/__test__/jestsetup.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"

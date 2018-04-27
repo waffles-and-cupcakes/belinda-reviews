@@ -12,7 +12,7 @@ class Review extends React.Component {
   } 
 
   readMore() {
-    console.log('clicked');
+    // console.log('clicked');
     this.setState({readMoreClicked: true});
   }
 

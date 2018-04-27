@@ -20,7 +20,8 @@ class App extends React.Component {
 
   componentDidMount() {
     var roomNum = window.location.pathname.split('/')[2];
-    axios.get(`/rooms/${roomNum}/reviews`)
+    axios.get(`http://13.56.58.150:80/rooms/${roomNum}/reviews`) // for docker
+    // axios.get(`/rooms/${roomNum}/reviews`)
     .then((res) => {
       // console.log('RESPONSE: ', res);
       this.setState({
