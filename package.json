@@ -13,12 +13,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "build": "webpack -d",
     "cli": "webpack -d --watch",
     "dev-server": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "jest": {
     "setupFiles": [
-      "./test/jestsetup.js"
+      "./client/components/__test__/jestsetup.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
@@ -49,7 +50,8 @@
     "pg-promise": "^8.2.3",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "nodemon": "^1.17.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

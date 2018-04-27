@@ -5,7 +5,8 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = 'postgres://localhost:5432/fec';
+var connectionString = 'postgres://postgres:postgres@database:5432/fec'; //for docker
+// var connectionString = 'postgres://localhost:5432/fec'; //for local
 var db = pgp(connectionString);
 
 var getRoomReviews = function(req, res, next) {

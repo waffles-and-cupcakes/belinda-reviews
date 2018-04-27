@@ -1,0 +1,14 @@
+# FOR LOCAL BUILD ONLY 
+
+version: '3'
+
+services:
+  reviews:
+    build: ./
+    depends_on:
+      - 'database'
+    ports: 
+      - '3004:3004'
+
+  database:
+    image: postgres:10.3

@@ -1,13 +1,12 @@
-# Project Name
+# AirBnC Room Listing Reviews
 
-> Project description
+> A room listing app for travellers to find places to stay
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - AirBnC Full App: https://github.com/waffles-and-cupcakes/belinda-proxy
+  - AirBnC Listing Description: https://github.com/waffles-and-cupcakes/shiyao-listingDescription
+  - AirBnC Photo Gallery: https://github.com/waffles-and-cupcakes/steve-photo-gallery
 
 ## Table of Contents
 
@@ -17,7 +16,7 @@
 
 ## Usage
 
-> Some usage instructions
+> 
 
 ## Requirements
 
@@ -35,5 +34,7 @@ From within the root directory:
 ```sh
 npm install -g webpack
 npm install
+npm run build
+npm start
 ```
 
