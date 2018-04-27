@@ -1,17 +1,18 @@
 # AirBnC Room Listing Reviews
 
 > AirBnC is a lovely room listing app for travellers to find places to stay!
-> Check out our customers' room listing reviews by cloning this repo.
+> Check out our customers' room listing reviews by cloning this repo :)
 
+![](https://i.imgur.com/Z7h3K1E.png)
 
-This project was built using ReactJS, MaterializeCSS, Webpack, NodeJS, ExpressJS, and Postgres. It was deployed using Docker and EC2.
+This project was build using ReactJS, MaterializeCSS, Webpack, NodeJS, ExpressJS, and Postgres. It was deployed using Docker and EC2.
 
 ## Related Projects
 
-Proxy server that combines all of the components
+Check out the proxy server I made that combines all of the components:
   - AirBnC Full App: https://github.com/waffles-and-cupcakes/belinda-proxy
 
-Other components
+See the other components here:
   - AirBnC Listing Description: https://github.com/waffles-and-cupcakes/shiyao-listingDescription
   - AirBnC Photo Gallery: https://github.com/waffles-and-cupcakes/steve-photo-gallery
 
@@ -23,9 +24,9 @@ Other components
 
 ## Usage
 
-Before starting, read the Requirements and Development sections below to ensure that your environment is correctly configured.
+Before starting, please read the Requirements and Development sections below to ensure that your environment is correctly configured.
 
-First, we need to seed the database. Executing the following command in your psql shell, from the root directory:
+First, we need to seed the database. Do so by executing the following command in your psql shell, from the root directory:
 ```sh
 \i db/generateMockData.sql
 ```
@@ -34,7 +35,7 @@ Then, build and run the application:
 npm run build
 npm start
 ```
-And now you're finished! Easy peasy lemon squeezy. You can visit 
+And now you're finished! ~Easy peasy lemon squeezy~ You can visit 
 
 `http://localhost:3004/rooms/:room_id` 
 
@@ -46,10 +47,10 @@ in your browser to see the reviews of any room. Note that `:room_id` is the room
 
 *Note: A `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).*
 
-Have this Node version or higher installed:
+You should have this Node version or higher installed:
 > Node 6.13.0 and up
 
-Postgres is required for seeding and running the database:
+Postgres is also required for seeding and running the database:
 > Postgres 10.3
 
 ## Development
@@ -62,3 +63,5 @@ Run these commands within the root directory:
 npm install -g webpack
 npm install
 ```
+
+
