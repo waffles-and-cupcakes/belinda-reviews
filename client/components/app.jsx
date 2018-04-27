@@ -20,7 +20,7 @@ class App extends React.Component {
 
   componentDidMount() {
     var roomNum = window.location.pathname.split('/')[2];
-    axios.get(`http://reviews/rooms/${roomNum}/reviews`)
+    axios.get(`/rooms/${roomNum}/reviews`)
     .then((res) => {
       // console.log('RESPONSE: ', res);
       this.setState({
