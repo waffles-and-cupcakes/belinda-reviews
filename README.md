@@ -35,7 +35,7 @@ Then, build and run the application:
 npm run build
 npm start
 ```
-And now you're finished! ~Easy peasy lemon squeezy~ You can visit 
+And now you're finished! Easy peasy lemon squeezy. You can visit 
 
 `http://localhost:3004/rooms/:room_id` 
 
