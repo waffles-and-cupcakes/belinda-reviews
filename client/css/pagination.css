@@ -1,0 +1,28 @@
+.pagination > .pg-num, .pagination > .pg-arrow  {
+  border: 1.25px solid rgb(225, 226, 226);
+  border-radius: 8%;
+}
+
+.pagination > .pg-num > a,  .pagination > .pg-arrow > a {
+  color: #00888B;
+}
+
+.pagination > .pg-num:hover,  .pagination > .pg-arrow:hover {
+  border-color: rgb(185, 185, 185);
+}
+
+i.icon-arrow-left {
+  transform: rotate(90deg);
+}
+
+i.icon-arrow-right {
+  transform: rotate(-90deg);
+}
+
+.pagination > .pg-active {
+  background-color: #EDEFED;
+}
+
+.pagination > .pg-active > a {
+  color: rgb(122, 122, 122);
+}

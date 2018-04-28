@@ -1,13 +1,13 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import ReviewsList from '../client/components/reviewsList';
+import Review from '../review';
 import renderer from 'react-test-renderer';
-import reviews from '../client/mockData';
+import reviews from '../../mockData';
 
 
-test('ReviewsList renders', () => {
+test('Reviews renders', () => {
   const component = renderer.create(
-    <ReviewsList changePage={jest.fn()} activePage={'1'} reviews={reviews}/>
+    <Review key={0} review={reviews[0]}/>
   )
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();

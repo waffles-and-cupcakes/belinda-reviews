@@ -1,8 +1,8 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import RatingsHeader from '../client/components/ratingsHeader';
+import RatingsHeader from '../ratingsHeader';
 import renderer from 'react-test-renderer';
-import reviews from '../client/mockData';
+import reviews from '../../mockData';
 
 
 test('RatingsHeader renders', () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Search from '../client/components/search';
+import Search from '../search';
 import renderer from 'react-test-renderer';
-import reviews from '../client/mockData';
+import reviews from '../../mockData';
 import expect from "expect";
 // import jest from 'jest';
 // jest.mock('react-dom');
@@ -15,12 +15,31 @@ test('Search renders', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('Search should search on pressing enter', () => {
-  const spy = expect.spyOn(Search.prototype, "sampleMethod");
-const wrapper = mount(<Search reviews={reviews} filterReviews={() => jest.fn()} />);
-expect(spy).toNotHaveBeenCalled();
-wrapper.find(".rev-search").simulate("click");
-expect(spy).toHaveBeenCalled();
+// test('Search should search on pressing enter', () => {
+//   const spy = expect.spyOn(Search.prototype, "sampleMethod");
+// const wrapper = mount(<Search reviews={reviews} filterReviews={() => jest.fn()} />);
+// expect(spy).toNotHaveBeenCalled();
+// wrapper.find(".rev-search").simulate("click");
+// expect(spy).toHaveBeenCalled();
+
+// });
+
+// test('Search changes the styles when in focus', () => {
+//   const component = renderer.create(
+//     <Search reviews={reviews} filterReviews={() => (console.log('filtering reviews'))}/>
+//   )
+//   let tree = component.toJSON();
+//   expect(tree).toMatchSnapshot();
+
+//   // tree.props.handleChange();
+
+//   // tree = component.toJSON();
+//   // expect(tree).toMatchSnapshot();  
+
+//   // tree.props.
+// });
+
+
   // console.log(wrapper);
 //   const spy = jest.spyOn(Search.prototype, 'handleChange');
 //   const wrapper = mount(<Search reviews={reviews} filterReviews={() => jest.fn()}/>);
@@ -44,19 +63,3 @@ expect(spy).toHaveBeenCalled();
   // wrapper.update();
   // wrapper.find('a').simulate('click');
   // expect(spy).toHaveBeenCalled();
-});
-
-// test('Search changes the styles when in focus', () => {
-//   const component = renderer.create(
-//     <Search reviews={reviews} filterReviews={() => (console.log('filtering reviews'))}/>
-//   )
-//   let tree = component.toJSON();
-//   expect(tree).toMatchSnapshot();
-
-//   // tree.props.handleChange();
-
-//   // tree = component.toJSON();
-//   // expect(tree).toMatchSnapshot();  
-
-//   // tree.props.
-// });

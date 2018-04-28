@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import App from '../client/components/app';
+import App from '../app';
 import renderer from 'react-test-renderer';
 import { componentDidMount } from 'react-dom';
 jest.mock('react-dom');

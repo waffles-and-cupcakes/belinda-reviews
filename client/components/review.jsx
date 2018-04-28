@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import moment from 'moment';
-import s from './../css/reviewsList.css';
-
+import PropTypes from 'prop-types';
+import s from './../css/review.css';
 
 class Review extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {readMoreClicked: false};
   } 
 
   readMore() {
-    // console.log('clicked');
     this.setState({readMoreClicked: true});
   }
 
@@ -41,5 +39,9 @@ class Review extends React.Component {
     );
   }
 }
+
+Review.propTypes = {
+  review: PropTypes.object.isRequired
+};
 
 export default Review;

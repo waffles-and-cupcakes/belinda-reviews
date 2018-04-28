@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import s from './../css/ratingsHeader.css';
+import PropTypes from 'prop-types';
+import s from './../css/search.css';
 
 
 class Search extends React.Component {
@@ -33,5 +34,10 @@ class Search extends React.Component {
     )
   }
 }
+
+Search.propTypes = {
+  reviews: PropTypes.array.isRequired,
+  filterReviews: PropTypes.func.isRequired
+};
 
 export default Search;

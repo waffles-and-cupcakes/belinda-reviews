@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import s from './../css/reviewsList.css';
-
+import PropTypes from 'prop-types';
+import s from './../css/pagination.css';
 
 class Pagination extends React.Component {
   constructor(props) {
-    super(props); //changePage, activePage, numPages
-    // console.log('num pages in constructor' + this.props.numPages);
-
+    super(props);
     this.state = {
       numbers: this.setLayout(parseInt(this.props.activePage))
     };
@@ -23,10 +21,7 @@ class Pagination extends React.Component {
   
   setLayout(active) {
     var nPages = parseInt(this.props.numPages);
-    // console.log('nPages: ', nPages, ', active: ', active);
-    // var active = parseInt(this.props.activePage);
     var numbers = [];
-    // console.log('nPages' + nPages);
     if (nPages > 5) {
       if (active !== 1) numbers.push('<');
       numbers.push('1');
@@ -50,7 +45,6 @@ class Pagination extends React.Component {
         numbers.push(i.toString());
       }
     }
-    // console.log(numbers);
     return numbers;
   }
 
@@ -87,9 +81,6 @@ class Pagination extends React.Component {
     }
   }
 
-  /*
-  4-5 numbers
-  */
   render() {
     const listElement = this.listElement.bind(this);
     return (
@@ -99,5 +90,11 @@ class Pagination extends React.Component {
     )
   }
 }
+
+Pagination.propTypes = {
+  numPages: PropTypes.number.isRequired,
+  changePage: PropTypes.func.isRequired,
+  activePage: PropTypes.string.isRequired,
+};
 
 export default Pagination;

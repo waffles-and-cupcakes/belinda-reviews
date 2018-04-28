@@ -1,8 +1,8 @@
 import React from 'react';
 import {mount, shallow} from 'enzyme';
-import Pagination from '../client/components/pagination';
+import Pagination from '../pagination';
 import renderer from 'react-test-renderer';
-import reviews from '../client/mockData';
+import reviews from '../../mockData';
 
 
 test('Pagination renders', () => {
