@@ -1,19 +1,19 @@
 module.exports = {
   entry: [
-    './client/index.jsx'
+    './client/index.jsx',
   ],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -22,10 +22,10 @@ module.exports = {
               importLoaders: 1,
               localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
-              minimize: true
-            }
-          }
-        ]
+              minimize: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -33,22 +33,22 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 8192
-            }
-          }
-        ]
-      }
-    ]
+              limit: 8192,
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    path: __dirname + '/public',
+    path: `${__dirname}/public`,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: './public'
-  }
+    contentBase: './public',
+  },
 };
