@@ -28,17 +28,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -85,17 +85,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -119,17 +119,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -153,17 +153,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -187,17 +187,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -221,17 +221,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
@@ -255,17 +255,17 @@ exports[`RatingsHeader renders 1`] = `
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"
         >
-          star_border
+          star
         </i>
         <i
           className="material-icons small icon-star"

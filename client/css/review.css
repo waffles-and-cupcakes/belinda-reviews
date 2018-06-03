@@ -1,0 +1,21 @@
+.collection-item {
+  margin: 2em;
+}
+
+i.icon-flag {
+  color: rgb(122, 122, 122);
+  transform: rotate(-20deg);
+}
+
+li {
+  margin: 0.1em;
+}
+
+.read-more {
+  color: #00888B;
+}
+
+.read-more:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
