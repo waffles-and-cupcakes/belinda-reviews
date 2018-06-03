@@ -15,7 +15,7 @@ test('Pagination renders', () => {
 
 test('Pagination changes page on handlePageClick', () => {
   const component = renderer.create(
-      <Pagination numPages={Math.ceil(reviews.length / 7)} changePage={jest.fn()} activePage={'1'} />
+    <Pagination numPages={Math.ceil(reviews.length / 7)} changePage={jest.fn()} activePage={'1'} />
   );
   let tree = component.toJSON();
   // console.log(tree);

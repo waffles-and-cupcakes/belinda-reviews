@@ -8,7 +8,7 @@ import reviews from '../../mockData';
 test('Reviews renders', () => {
   const component = renderer.create(
     <Review key={0} review={reviews[0]}/>
-  )
+  );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -26,3 +26,4 @@ CREATE TABLE reviews
 COPY reviews(room_id, first_name, user_avatar, created_at, 
 body, accuracy, communication, cleanliness, location, check_in, value) 
 FROM '/var/lib/postgresql/data/reviews.csv' DELIMITER ',' CSV HEADER;
+-- GET ABSOLUTE PATH

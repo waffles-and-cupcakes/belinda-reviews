@@ -3,14 +3,14 @@ import {shallow} from 'enzyme';
 import Search from '../search';
 import renderer from 'react-test-renderer';
 import reviews from '../../mockData';
-import expect from "expect";
+import expect from 'expect';
 // import jest from 'jest';
 // jest.mock('react-dom');
 
 test('Search renders', () => {
   const component = renderer.create(
     <Search reviews={reviews} filterReviews={() => jest.fn()}/>
-  )
+  );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -40,7 +40,7 @@ test('Search renders', () => {
 // });
 
 
-  // console.log(wrapper);
+// console.log(wrapper);
 //   const spy = jest.spyOn(Search.prototype, 'handleChange');
 //   const wrapper = mount(<Search reviews={reviews} filterReviews={() => jest.fn()}/>);
 //   // console.log(spy);
@@ -52,14 +52,14 @@ test('Search renders', () => {
 // wrapper.update();
 //   // input.props.onKeyPress({key: 'Enter'});
 //   expect(spy).toHaveBeenCalled();
-  // expect(wrapper.state().isOpen).toBe(true);  
+// expect(wrapper.state().isOpen).toBe(true);  
   
-  //  console.log('input', input, 'wrapper', wrapper);
+//  console.log('input', input, 'wrapper', wrapper);
 
 
 
-  // const wrapper = mount(<App />);
-  // const spy = jest.spyOn(wrapper.instance(), 'handleAnchorClick');
-  // wrapper.update();
-  // wrapper.find('a').simulate('click');
-  // expect(spy).toHaveBeenCalled();
+// const wrapper = mount(<App />);
+// const spy = jest.spyOn(wrapper.instance(), 'handleAnchorClick');
+// wrapper.update();
+// wrapper.find('a').simulate('click');
+// expect(spy).toHaveBeenCalled();
